@@ -1,9 +1,14 @@
 {
   "name": "@leofcoin/global-types",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "types": "./global.d.ts",
+  "exports": {
+    ".": {
+      "types": "./global.d.ts"
+    }
+  },
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,11 +17,6 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@rollup/plugin-typescript": "^11.0.0",
-    "rollup": "^3.17.1",
-    "tslib": "^2.5.0"
-  },
-  "dependencies": {
     "@ethersproject/bignumber": "^5.7.0"
   }
 }
