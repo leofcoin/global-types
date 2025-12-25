@@ -1,6 +1,4 @@
-import { BigNumber } from '@ethersproject/bignumber';
-
-declare interface msg {
+export declare interface msg {
   sender: address;
   contract: address;
   call(contract: address, method: string, parameters: any[]): Promise<any>;
@@ -18,8 +16,6 @@ declare interface msg {
 }
 
 declare global {
-  const BigNumber: BigNumber;
-  type BigNumberish = string | number | bigint | BigNumber | ArrayLike<number>;
   type address = string;
   const msg: msg;
 }

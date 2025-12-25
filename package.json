@@ -15,8 +15,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
-  "devDependencies": {
-    "@ethersproject/bignumber": "^5.7.0"
-  }
+  "license": "MIT"
 }
